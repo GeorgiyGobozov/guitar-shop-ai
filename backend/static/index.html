@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>StringTheory — Обращения</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 text-slate-800 min-h-screen">
+
+  <header class="bg-slate-900 text-white">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl">🎸</span>
+        <div>
+          <h1 class="text-lg font-semibold">StringTheory</h1>
+          <p class="text-xs text-slate-400">Обращения клиентов · ML-классификация</p>
+        </div>
+      </div>
+      <div id="health" class="text-xs text-slate-400">проверка сервисов…</div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+    <section class="lg:col-span-1 bg-white rounded-2xl shadow p-5 h-fit">
+      <h2 class="text-base font-semibold mb-4">Новое обращение</h2>
+      <form id="ticket-form" class="space-y-3">
+        <div>
+          <label class="block text-xs text-slate-500 mb-1">Имя</label>
+          <input name="customer_name" required
+                 class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+        </div>
+        <div>
+          <label class="block text-xs text-slate-500 mb-1">Email</label>
+          <input name="customer_email" type="email" required
+                 class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+        </div>
+        <div>
+          <label class="block text-xs text-slate-500 mb-1">Тема</label>
+          <input name="subject" required
+                 class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+        </div>
+        <div>
+          <label class="block text-xs text-slate-500 mb-1">Описание</label>
+          <textarea name="description" rows="4" required
+                    class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
+        </div>
+        <button type="submit"
+                class="w-full bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium py-2 rounded-lg transition">
+          Отправить
+        </button>
+        <p id="form-msg" class="text-xs text-center text-slate-500"></p>
+      </form>
+    </section>
+
+    <section class="lg:col-span-2">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="text-base font-semibold">Обращения</h2>
+        <div class="flex gap-2 items-center">
+          <select id="filter-category"
+                  class="text-xs border border-slate-200 rounded-lg px-2 py-1 bg-white">
+            <option value="">Все категории</option>
+            <option value="electric">electric</option>
+            <option value="acoustic">acoustic</option>
+            <option value="classical">classical</option>
+            <option value="bass">bass</option>
+            <option value="accessories">accessories</option>
+            <option value="delivery">delivery</option>
+            <option value="payment">payment</option>
+            <option value="warranty">warranty</option>
+          </select>
+          <button id="refresh"
+                  class="text-xs bg-slate-200 hover:bg-slate-300 px-3 py-1 rounded-lg">Обновить</button>
+        </div>
+      </div>
+
+      <div id="tickets" class="space-y-3"></div>
+      <p id="empty" class="hidden text-sm text-slate-500 text-center py-8">Пока обращений нет</p>
+    </section>
+  </main>
+
+<script>
+const colorByPriority = {
+  high:   "bg-red-100 text-red-700",
+  medium: "bg-amber-100 text-amber-700",
+  low:    "bg-emerald-100 text-emerald-700",
+};
+const colorByProblem = {
+  product_info:      "bg-sky-100 text-sky-700",
+  order_issue:       "bg-indigo-100 text-indigo-700",
+  technical_problem: "bg-orange-100 text-orange-700",
+  refund:            "bg-pink-100 text-pink-700",
+  complaint:         "bg-rose-100 text-rose-700",
+};
+
+function badge(text, cls = "bg-slate-100 text-slate-700") {
+  return `<span class="text-[11px] px-2 py-0.5 rounded-full ${cls}">${text ?? "—"}</span>`;
+}
+
+function escapeHtml(s) {
+  return (s ?? "").replace(/[&<>"']/g, c => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+  }[c]));
+}
+
+function renderTicket(t) {
+  const prio = colorByPriority[t.ml_priority] ?? "bg-slate-100 text-slate-700";
+  const prob = colorByProblem[t.ml_problem_type] ?? "bg-slate-100 text-slate-700";
+  const conf = t.ml_confidence != null ? (t.ml_confidence * 100).toFixed(0) + "%" : "—";
+  const created = t.created_at ? new Date(t.created_at).toLocaleString("ru-RU") : "";
+
+  return `
+    <article class="bg-white rounded-2xl shadow p-4">
+      <div class="flex justify-between items-start gap-3">
+        <div class="min-w-0">
+          <h3 class="font-semibold text-sm truncate">#${t.id} · ${escapeHtml(t.subject)}</h3>
+          <p class="text-xs text-slate-500 mt-0.5">
+            ${escapeHtml(t.customer_name)} · ${escapeHtml(t.customer_email)} · ${created}
+          </p>
+        </div>
+        <span class="text-[11px] px-2 py-0.5 rounded-full bg-slate-900 text-white whitespace-nowrap">
+          ${t.status}
+        </span>
+      </div>
+
+      <p class="text-sm text-slate-700 mt-3 whitespace-pre-line">${escapeHtml(t.description)}</p>
+
+      <div class="flex flex-wrap gap-2 mt-3">
+        ${badge("category: " + (t.ml_category ?? "—"), "bg-purple-100 text-purple-700")}
+        ${badge("priority: " + (t.ml_priority ?? "—"), prio)}
+        ${badge("type: " + (t.ml_problem_type ?? "—"), prob)}
+        ${badge("conf: " + conf)}
+      </div>
+
+      <div class="flex gap-2 mt-3">
+        <button data-action="assign" data-id="${t.id}"
+                class="text-xs bg-slate-100 hover:bg-slate-200 px-3 py-1 rounded-lg">Назначить</button>
+        <button data-action="close"  data-id="${t.id}"
+                class="text-xs bg-slate-100 hover:bg-slate-200 px-3 py-1 rounded-lg">Закрыть</button>
+      </div>
+    </article>
+  `;
+}
+
+async function loadTickets() {
+  const cat = document.getElementById("filter-category").value;
+  const url = "/api/tickets" + (cat ? `?category=${encodeURIComponent(cat)}` : "");
+  const r = await fetch(url);
+  const data = await r.json();
+
+  const container = document.getElementById("tickets");
+  const empty = document.getElementById("empty");
+  container.innerHTML = data.map(renderTicket).join("");
+  empty.classList.toggle("hidden", data.length > 0);
+}
+
+async function checkHealth() {
+  const el = document.getElementById("health");
+  try {
+    const b = await fetch("/health").then(r => r.ok).catch(() => false);
+    const m = await fetch("/ml-health").then(r => r.json()).then(j => j.ok).catch(() => false);
+    el.innerHTML = `
+      <span class="${b ? "text-emerald-400" : "text-red-400"}">● backend</span>
+      <span class="mx-1">·</span>
+      <span class="${m ? "text-emerald-400" : "text-red-400"}">● ml</span>
+    `;
+  } catch {
+    el.textContent = "сервисы недоступны";
+  }
+}
+
+document.getElementById("ticket-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const fd = new FormData(e.target);
+  const body = Object.fromEntries(fd.entries());
+  const msg = document.getElementById("form-msg");
+  msg.textContent = "Отправка…";
+  msg.className = "text-xs text-center text-slate-500";
+
+  try {
+    const r = await fetch("/api/tickets", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+    if (!r.ok) throw new Error(await r.text());
+    const t = await r.json();
+    msg.textContent = `OK · ML: ${t.ml_category ?? "—"} / ${t.ml_priority ?? "—"} / ${t.ml_problem_type ?? "—"}`;
+    msg.className = "text-xs text-center text-emerald-600";
+    e.target.reset();
+    loadTickets();
+  } catch (err) {
+    msg.textContent = "Ошибка: " + err.message;
+    msg.className = "text-xs text-center text-red-600";
+  }
+});
+
+document.getElementById("refresh").addEventListener("click", loadTickets);
+document.getElementById("filter-category").addEventListener("change", loadTickets);
+
+document.getElementById("tickets").addEventListener("click", async (e) => {
+  const btn = e.target.closest("button[data-action]");
+  if (!btn) return;
+  const { action, id } = btn.dataset;
+  if (action === "assign") {
+    const assignee = prompt("Кому назначить?");
+    if (!assignee) return;
+    await fetch(`/api/tickets/${id}/assign?assignee=${encodeURIComponent(assignee)}`, { method: "PATCH" });
+  } else if (action === "close") {
+    if (!confirm("Закрыть обращение?")) return;
+    await fetch(`/api/tickets/${id}/close`, { method: "PATCH" });
+  }
+  loadTickets();
+});
+
+loadTickets();
+checkHealth();
+setInterval(checkHealth, 15000);
+</script>
+</body>
+</html>

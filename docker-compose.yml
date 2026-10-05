@@ -1,0 +1,45 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: st-postgres
+    environment:
+      POSTGRES_DB: stringtheory
+      POSTGRES_USER: shop
+      POSTGRES_PASSWORD: shop
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U shop -d stringtheory"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  ml-service:
+    build: ./ml-service
+    container_name: st-ml
+    ports:
+      - "8000:8000"
+    environment:
+      PYTHONUNBUFFERED: "1"
+    restart: unless-stopped
+
+  backend:
+    build: ./backend
+    container_name: st-backend
+    ports:
+      - "8080:8080"
+    environment:
+      DATABASE_URL: postgresql+psycopg2://shop:shop@postgres:5432/stringtheory
+      ML_SERVICE_URL: http://ml-service:8000
+    depends_on:
+      postgres:
+        condition: service_healthy
+      ml-service:
+        condition: service_started
+    restart: unless-stopped
+
+volumes:
+  pgdata:

@@ -1,0 +1,347 @@
+text,category,priority,problem_type
+Не приходит звук с электрогитары Fender, что делать?,electric,high,technical_problem
+Fender Stratocaster фонит при подключении к комбику,electric,high,technical_problem
+Gibson Les Paul хрипит на перегрузе,electric,high,technical_problem
+Электрогитара Ibanez фонит при касании струн,electric,medium,technical_problem
+Fender Telecaster не работает бриджевый звукосниматель,electric,high,technical_problem
+Электрогитара гудит только на чистом канале,electric,medium,technical_problem
+Стратокастер трещит при переключении,electric,medium,technical_problem
+Les Paul фон при высоком гейне, нормально?,electric,low,product_info
+Электрогитара Fender не строит выше 12 лада,electric,medium,technical_problem
+Гибсон: фонит сингл, хочу поменять на хамбакер,electric,low,product_info
+Электрогитара Schecter хрипит на клине,electric,high,technical_problem
+Superstrat с активными датчиками шумит,electric,medium,technical_problem
+Fender Mustang: фон при подключении к педалборду,electric,medium,technical_problem
+Хочу электрогитару Fender для металла,electric,low,product_info
+Сравните Fender Player и Squier Classic Vibe,electric,low,product_info
+Электрогитара: заменить звукосниматели на активные,electric,low,product_info
+Гибсон Лес Пол: болтается переключатель,electric,medium,technical_problem
+Электрогитара фонит после смены струн,electric,medium,technical_problem
+Fender Jazzmaster гудит на репетиции,electric,medium,technical_problem
+Электрогитара для джаза, что посоветуете?,electric,low,product_info
+PRS: не работает отсечка катушек,electric,high,technical_problem
+Электрогитара: трещит ручка громкости,electric,medium,technical_problem
+Jackson Dinky: фонит джек,electric,medium,technical_problem
+ESP LTD: сломался тумблер,electric,high,technical_problem
+Электрогитара Epiphone: хрипит на клине,electric,medium,technical_problem
+Charvel SoCal: фон на перегрузе,electric,medium,technical_problem
+Cort X300: не работает нековый датчик,electric,high,technical_problem
+Электрогитара для новичка до 30000 рублей,electric,low,product_info
+Fender American Pro: строит ли строй при бендах?,electric,low,product_info
+Электрогитара: после падения отвалился колок,electric,high,technical_problem
+Гитара с Floyd Rose: не держит строй,electric,high,technical_problem
+Ibanez RG: щёлкает при переключении,electric,medium,technical_problem
+Электрогитара: шумит на репетиции, но не дома,electric,medium,technical_problem
+Лес Пол: сильный фон при касании струн,electric,high,technical_problem
+Электрогитара: поменял струны - не строит,electric,medium,technical_problem
+Fender Strat: сильный фон, что делать,electric,high,technical_problem
+Фонит электрогитара при прикосновении к струнам,electric,high,technical_problem
+Электрогитара: хрип из-за плохого кабеля?,electric,low,product_info
+Электрогитара: бриджевый хамбакер не работает,electric,high,technical_problem
+Cort: фон только в одном положении переключателя,electric,medium,technical_problem
+Гитара Schecter: активный датчик не включается,electric,high,technical_problem
+Электрогитара: тумблер работает через раз,electric,medium,technical_problem
+Флойд роуз: не возвращается в строй,electric,high,technical_problem
+Электрогитара: анкер не крутится,electric,high,technical_problem
+Fender: сломался джек на новой гитаре,electric,high,technical_problem
+Купил Gibson SG, не строит 3-я струна,electric,medium,technical_problem
+Электрогитара с P90 фонит громче, чем с хамбакерами,electric,medium,product_info
+Хамбакер vs сингл - что лучше для металла?,electric,low,product_info
+Электрогитара: регулировка анкера, куда крутить?,electric,low,product_info
+Ibanez: не держит строй при флойде,electric,medium,technical_problem
+Электрогитара: трещит на громкости,electric,medium,technical_problem
+Гитара Эпифон: хрустит переключатель,electric,medium,technical_problem
+ESP: сломался флойд при замене струн,electric,high,technical_problem
+PRS SE: гудит даже без подключения,electric,medium,technical_problem
+Электрогитара: царапина на деке при распаковке,electric,medium,complaint
+Пришла гитара Fender не того цвета,electric,medium,complaint
+Заказ Fender Stratocaster задерживается,electric,medium,order_issue
+Где мой Fender Telecaster?,electric,medium,order_issue
+Хочу вернуть Gibson Les Paul,electric,high,refund
+Верните деньги за электрогитару,electric,high,refund
+Fender Player пришёл с браком,electric,high,complaint
+Электрогитара: упаковка была повреждена,electric,medium,complaint
+Ibanez: не то, что на фото,electric,medium,complaint
+Гарантийный случай на электрогитаре? Сломался колок,electric,medium,technical_problem
+Через месяц сломалась электрогитара - гарантия?,electric,medium,technical_problem
+Электрогитара Fender: гарантия на электронику?,electric,low,product_info
+Хочу заменить звукосниматель по гарантии,electric,medium,technical_problem
+Гарантия на электрогитару - сколько?,electric,low,product_info
+Звук с акустики пропал, что делать?,acoustic,high,technical_problem
+Акустика Yamaha F310: дребезжит струна,acoustic,medium,technical_problem
+Taylor 114e: скрипит порожек,acoustic,medium,technical_problem
+Акустическая гитара фонит через усилитель,acoustic,medium,technical_problem
+Электроакустика Takamine: не работает пьезо,acoustic,high,technical_problem
+Martin D-28: гудит басовая струна,acoustic,medium,technical_problem
+Акустика: отклеилась подставка,acoustic,high,complaint
+Акустика Fender CD-60: треснула дека,acoustic,high,complaint
+Акустика: сломался анкер,acoustic,high,technical_problem
+Акустика Sigma: порожек слишком высокий,acoustic,medium,technical_problem
+Guild: фонит звукосниматель,acoustic,medium,technical_problem
+Акустика Yamaha: не строит выше 5 лада,acoustic,medium,technical_problem
+Taylor: болтается гайка анкера,acoustic,medium,technical_problem
+Акустика: сломалась головка грифа при транспортировке,acoustic,high,complaint
+Мартин: трещина на деке после покупки,acoustic,high,complaint
+Акустика: после смены струн не строит,acoustic,medium,technical_problem
+Takamine: шумит предусилитель,acoustic,medium,technical_problem
+Акустика: при игре щёлкает в районе бриджа,acoustic,medium,technical_problem
+Акустика Epiphone: отклеился бридж,acoustic,high,technical_problem
+Yamaha FG800: скрип при смене аккордов,acoustic,medium,technical_problem
+Акустика: нужна диагностика звука,acoustic,medium,technical_problem
+Посоветуйте акустику до 20000 рублей,acoustic,low,product_info
+Характеристики Taylor 114e,acoustic,low,product_info
+Акустика Martin D-28 - есть в наличии?,acoustic,low,product_info
+Сравните Yamaha F310 и Sigma D-10,acoustic,low,product_info
+Акустика для новичка - что выбрать?,acoustic,low,product_info
+Акустика для фингерстайла - что посоветуете?,acoustic,low,product_info
+Yamaha F310 - обзор и отзывы,acoustic,low,product_info
+Акустика с вырезом до 40000 рублей,acoustic,low,product_info
+Сколько стоит Taylor 114e?,acoustic,low,product_info
+Акустика: хочу заменить накладку грифа,acoustic,low,product_info
+Акустика: нужны струны 12-53,acoustic,low,product_info
+Акустика Yamaha - когда будет в наличии?,acoustic,medium,product_info
+Заказ акустики Taylor задерживается,acoustic,medium,order_issue
+Где моя акустическая гитара?,acoustic,medium,order_issue
+Хочу вернуть акустику Martin,acoustic,high,refund
+Верните деньги за акустику,acoustic,high,refund
+Акустика пришла с трещиной,acoustic,high,complaint
+Акустика: не тот цвет, что на сайте,acoustic,medium,complaint
+Акустика Takamine поцарапана,acoustic,medium,complaint
+Гарантия на акустическую гитару - срок?,acoustic,low,product_info
+Акустика: гарантийный ремонт анкера,acoustic,medium,technical_problem
+По гарантии заменить порожек на акустике,acoustic,medium,technical_problem
+Классика: треснула дека после доставки,classical,high,complaint
+Классическая гитара: скрип при смене аккордов,classical,medium,technical_problem
+Классика Cordoba C5: фонит через усилитель,classical,medium,technical_problem
+Классика: сломался колок,classical,high,technical_problem
+Alhambra: расстроена после доставки,classical,medium,technical_problem
+Классическая гитара: порожек слишком высокий,classical,medium,technical_problem
+Классика: не строит басовая струна,classical,medium,technical_problem
+Классика: поцарапана при отправке,classical,medium,complaint
+Классическая гитара для ребёнка - что посоветуете?,classical,low,product_info
+Классика для фламенко - что выбрать?,classical,low,product_info
+Характеристики Cordoba C7,classical,low,product_info
+Классика до 15000 рублей,classical,low,product_info
+Alhambra 3C - есть в наличии?,classical,low,product_info
+Классическая гитара с мензурой 3/4,classical,low,product_info
+Сколько стоит Martinez FC-10?,classical,low,product_info
+Классика: какая мензура для ребёнка 8 лет?,classical,low,product_info
+Классика: хочу поменять нейлон на карбон,classical,low,product_info
+Классика с вырезом для фламенко,classical,low,product_info
+Классическая гитара: обзор Yamaha C40,classical,low,product_info
+Заказ классики Cordoba задерживается,classical,medium,order_issue
+Где моя классическая гитара?,classical,medium,order_issue
+Хочу вернуть классику Alhambra,classical,high,refund
+Классика пришла с трещиной на деке,classical,high,complaint
+Классика: не тот цвет, что на сайте,classical,medium,complaint
+Классика: гарантия на анкер,classical,low,product_info
+Классика: по гарантии заменить колок,classical,medium,technical_problem
+Гарантия на классическую гитару - срок?,classical,low,product_info
+Бас Ibanez SR300E: гудит при подключении к комбику,bass,high,technical_problem
+Бас Fender Precision фонит,bass,high,technical_problem
+Music Man StingRay: фон на активной электронике,bass,medium,technical_problem
+Warwick Corvette: хрипит темброблок,bass,high,technical_problem
+Squier Jazz Bass: шумит потенциометр,bass,medium,technical_problem
+Бас-гитара: не работает активный темброблок,bass,high,technical_problem
+Бас: сломался бридж после падения,bass,high,technical_problem
+Бас Ibanez: щёлкает переключатель,bass,medium,technical_problem
+Бас-гитара: отвалился джек,bass,medium,technical_problem
+Бас Cort: активный датчик сажает батарейку за день,bass,high,technical_problem
+Бас-гитара: не строит по ладам,bass,medium,technical_problem
+Бас Yamaha RBX: фонит при касании струн,bass,medium,technical_problem
+Бас-гитара: сломался колок на бридже,bass,high,technical_problem
+Music Man: не работает отсечка,bass,high,technical_problem
+Бас-гитара: анкер не крутится,bass,high,technical_problem
+Бас: трещит ручка громкости,bass,medium,technical_problem
+Бас-гитара: после смены струн не строит,bass,medium,technical_problem
+Fender Jazz Bass: фон при игре на репетиции,bass,medium,technical_problem
+Бас Schecter: шумит активный преамп,bass,medium,technical_problem
+Бас-гитара: отвалился порожек,bass,high,technical_problem
+Бас 5-струнный: не строит B-струна,bass,medium,technical_problem
+Бас: фонит при подключении к педалборду,bass,medium,technical_problem
+Бас-гитара для металла до 40000 рублей,bass,low,product_info
+Сравните Ibanez SR300E и Yamaha TRBX,bass,low,product_info
+Бас-гитара 5 струн - что посоветуете?,bass,low,product_info
+Характеристики Fender Precision,bass,low,product_info
+Бас-гитара для новичка - что выбрать?,bass,low,product_info
+Активный бас или пассивный - что лучше?,bass,low,product_info
+Бас Cort Action - обзор,bass,low,product_info
+Сколько стоит Music Man StingRay?,bass,low,product_info
+Бас-гитара с короткой мензурой,bass,low,product_info
+Бас: струны 45-105 - есть в наличии?,bass,low,product_info
+Warwick - есть в наличии?,bass,medium,product_info
+Заказ бас-гитары задерживается,bass,medium,order_issue
+Где мой бас Ibanez?,bass,medium,order_issue
+Хочу вернуть бас-гитару Music Man,bass,high,refund
+Верните деньги за бас,bass,high,refund
+Бас пришёл с браком,bass,high,complaint
+Бас-гитара: не тот цвет,bass,medium,complaint
+Бас Ibanez поцарапан при доставке,bass,medium,complaint
+Гарантия на бас-гитару - срок?,bass,low,product_info
+Гарантийный ремонт бас-гитары,bass,medium,technical_problem
+По гарантии заменить потенциометр на басе,bass,medium,technical_problem
+Струны быстро ржавеют, брак или норма?,accessories,medium,complaint
+Медиаторы стерлись за неделю,accessories,low,technical_problem
+Каподастр не фиксируется,accessories,medium,technical_problem
+Чехол: порвалась молния,accessories,medium,technical_problem
+Тюнер не ловит ноты,accessories,medium,technical_problem
+Кабель шумит и трещит,accessories,high,technical_problem
+Ремень гитары расстегивается,accessories,medium,technical_problem
+Струны не подошли по калибру,accessories,medium,refund
+Медиаторы мягкие вместо жёстких,accessories,medium,complaint
+Струны для 7-струнной гитары,accessories,low,product_info
+Какие струны для акустики?,accessories,low,product_info
+Струны 10-46 для Gibson Les Paul подойдут?,accessories,low,product_info
+Посоветуйте медиаторы до 500 рублей,accessories,low,product_info
+Чем отличаются струны 10-46 от 11-49?,accessories,low,product_info
+Каподастр для акустики - какой выбрать?,accessories,low,product_info
+Сколько стоит Dunlop Tortex?,accessories,low,product_info
+Струны Ernie Ball - есть в наличии?,accessories,low,product_info
+Струны Elixir - стоят своих денег?,accessories,low,product_info
+Чехол для электрогитары - что посоветуете?,accessories,low,product_info
+Стойка для гитары - какая лучше?,accessories,low,product_info
+Тюнер-прищепка - какой выбрать?,accessories,low,product_info
+Кабель 6 метров - что посоветуете?,accessories,low,product_info
+Медиаторы 1.0 мм - есть в наличии?,accessories,low,product_info
+Струны для баса 45-105,accessories,low,product_info
+Заказ струн задерживается,accessories,medium,order_issue
+Где мой заказ медиаторов?,accessories,medium,order_issue
+Каподастр не пришёл,accessories,medium,order_issue
+Не пришло уведомление о заказе струн,accessories,medium,order_issue
+Заказ кабеля потерялся,accessories,high,order_issue
+Хочу вернуть струны,accessories,high,refund
+Медиаторы не подошли - возврат,accessories,high,refund
+Верните деньги за каподастр,accessories,high,refund
+Струны не подошли - обмен или возврат,accessories,high,refund
+Струны пришли не того калибра,accessories,medium,complaint
+Заказ медиаторов: количество не совпало,accessories,medium,complaint
+Струны порвались на первой неделе,accessories,high,complaint
+Каподастр поцарапан при доставке,accessories,medium,complaint
+Пришёл чехол не того размера,accessories,medium,complaint
+Струны не того бренда пришли,accessories,medium,complaint
+Медиаторы пришли разных толщин в одной упаковке,accessories,low,complaint
+Курьер задерживается, доставка не пришла вовремя,delivery,medium,order_issue
+Курьер не позвонил и уехал,delivery,high,order_issue
+Посылка потерялась на складе,delivery,high,order_issue
+Изменить адрес доставки - можно?,delivery,low,order_issue
+Статус доставки не меняется,delivery,medium,order_issue
+Курьер опоздал на 3 часа,delivery,medium,complaint
+Упаковка повреждена при доставке,delivery,medium,complaint
+Курьер нагрубил,delivery,high,complaint
+Привезли не мой заказ,delivery,high,complaint
+Доставка в грязи и без упаковки,delivery,medium,complaint
+Курьер не может найти адрес,delivery,medium,order_issue
+Трек-номер не отслеживается,delivery,high,order_issue
+Не приходит SMS с кодом получения,delivery,medium,order_issue
+ПВЗ закрыт, не могу забрать заказ,delivery,high,order_issue
+Сколько стоит доставка в Москву?,delivery,low,product_info
+Доставка за город доступна?,delivery,low,product_info
+Есть ли доставка в Казань?,delivery,low,product_info
+Сроки доставки в Санкт-Петербург,delivery,low,product_info
+Можно ли изменить адрес доставки после оплаты?,delivery,low,product_info
+Доставка крупногабарита - условия?,delivery,low,product_info
+Работаете ли с СДЭК?,delivery,low,product_info
+Есть ли бесплатная доставка?,delivery,low,product_info
+Доставка до двери или до ПВЗ?,delivery,low,product_info
+Доставка в Сочи - сколько дней?,delivery,low,product_info
+Можно ли забрать самовывозом?,delivery,low,product_info
+Работаете ли в выходные с доставкой?,delivery,low,product_info
+Доставка в другой город - как оплатить?,delivery,low,product_info
+Курьер приедет в субботу?,delivery,low,product_info
+Заказ не пришёл - хочу возврат,delivery,high,refund
+Оплатил доставку, но посылка не пришла,delivery,high,refund
+Оплата картой не проходит, ошибка 500,payment,high,technical_problem
+Не могу оплатить через СБП,payment,high,technical_problem
+Платёж завис в статусе 'обработка',payment,high,technical_problem
+Оплата частями не работает,payment,medium,technical_problem
+Чек не пришёл на email,payment,medium,order_issue
+Двойное списание с карты,payment,high,refund
+Ошибка валидации карты,payment,high,technical_problem
+Промокод не применяется при оплате,payment,medium,technical_problem
+Оплата через ЮKassa не работает,payment,high,technical_problem
+Не проходит оплата МИР,payment,high,technical_problem
+Не работает оплата при получении,payment,medium,technical_problem
+Какие способы оплаты доступны?,payment,low,product_info
+Оплата частями - возможно?,payment,low,product_info
+Работаете ли с картой МИР?,payment,low,product_info
+Можно ли оплатить при получении?,payment,low,product_info
+Как применить промокод?,payment,low,product_info
+Оплата через ЮKassa - как?,payment,low,product_info
+Оплата СБП - есть ли?,payment,low,product_info
+Как оформить возврат на карту?,payment,low,product_info
+Оплата в рассрочку - условия?,payment,low,product_info
+Принимаете ли оплату от юрлиц?,payment,low,product_info
+Оплата прошла, но заказ не подтверждён,payment,high,order_issue
+Чек не пришёл, нужен для отчётности,payment,medium,order_issue
+Заказ не создался после оплаты,payment,high,order_issue
+Не приходит подтверждение оплаты,payment,medium,order_issue
+Верните деньги за отменённый заказ,payment,high,refund
+Двойное списание - верните разницу,payment,high,refund
+Отменил заказ - когда вернутся деньги?,payment,high,refund
+Списали деньги, а заказ не оформился,payment,high,complaint
+Платёж прошёл дважды,payment,high,complaint
+При оплате вылетела ошибка, деньги списались,payment,high,complaint
+Гарантийный ремонт: сломался колок,warranty,medium,technical_problem
+Хочу заменить по гарантии звукосниматель,warranty,medium,technical_problem
+Гарантия на электронику - что входит?,warranty,low,product_info
+Гарантийный случай или моя вина?,warranty,low,product_info
+Погнулся колок - гарантийный случай?,warranty,medium,technical_problem
+Сколько составляет гарантия на гитару?,warranty,low,product_info
+Что входит в гарантийное обслуживание?,warranty,low,product_info
+Гарантия на фурнитуру гитары,warranty,low,product_info
+Гарантия покрывает замену звукоснимателя?,warranty,low,product_info
+Как оформить гарантию?,warranty,low,product_info
+Гарантия на бас-гитару - срок?,warranty,low,product_info
+Гарантия на акустику - срок?,warranty,low,product_info
+Гарантия на классику - сколько?,warranty,low,product_info
+Гарантия на электрогитару - сколько?,warranty,low,product_info
+Гарантия на аксессуары - есть?,warranty,low,product_info
+Гарантийный ремонт - как отследить статус?,warranty,medium,order_issue
+Не приходит ответ по гарантийной заявке,warranty,medium,order_issue
+Хочу вернуть гитару по гарантии,warranty,high,refund
+Гарантийный возврат средств - как оформить?,warranty,high,refund
+По гарантии отказали без объяснений,warranty,high,complaint
+Гарантийный ремонт затянулся на месяц,warranty,high,complaint
+Гарантия не покрывает заводской брак?,warranty,high,complaint
+Гарантийный случай: треснула дека,warranty,high,technical_problem
+Гарантия: заменить колок бесплатно?,warranty,low,product_info
+Гарантия на Floyd Rose - что покрывает?,warranty,low,product_info
+Гарантийный ремонт анкера - возможно?,warranty,medium,technical_problem
+Гарантия на пьезо в электроакустике,warranty,low,product_info
+Гарантийная замена потенциометра,warranty,medium,technical_problem
+Заводской брак или износ - как определить?,warranty,low,product_info
+Гарантия на бридж гитары,warranty,low,product_info
+Гарантийный случай: разошлась накладка грифа,warranty,high,technical_problem
+Купил электрогитару Fender, при подключении к комбику идёт сильный фон и хрип,electric,high,technical_problem
+Заказ Fender Stratocaster, пришёл с царапиной на деке,electric,high,complaint
+Акустика Yamaha пришла с трещиной, доставка была в срок,acoustic,high,complaint
+Бас Ibanez: активный темброблок хрипит на репетиции,bass,high,technical_problem
+Классика Cordoba: при распаковке обнаружена трещина,classical,high,complaint
+Заказал струны Elixir, но пришли Dunlop,accessories,medium,complaint
+Доставка опоздала на 5 часов, курьер не позвонил,delivery,high,complaint
+Оплата через СБП: двойное списание, деньги не вернулись,payment,high,refund
+Гарантийный ремонт Gibson: затянулся на два месяца,warranty,high,complaint
+Электрогитара Schecter с активными EMG: фонит на перегрузе,electric,high,technical_problem
+Акустика Taylor 114e: пьезо не работает через усилитель,acoustic,high,technical_problem
+Бас Music Man StingRay: активный преамп хрустит,bass,high,technical_problem
+Классика Alhambra: после транспортировки не строит,classical,medium,technical_problem
+Каподастр Dunlop: не фиксируется на первом ладу,accessories,medium,technical_problem
+Курьер привёз посылку в мятой коробке, гитара целая,delivery,medium,complaint
+Не приходит чек на email после оплаты картой,payment,medium,order_issue
+Гарантия на Fender American Pro: сломался тумблер,warranty,medium,technical_problem
+Ibanez RG: после смены струн не держит строй,electric,medium,technical_problem
+Martin D-28: трещина на деке, гарантия?,acoustic,high,complaint
+Бас Warwick: активная электроника не включается,bass,high,technical_problem
+Классика Yamaha C40: скрипит порожек,classical,medium,technical_problem
+Медиаторы Tortex: пришли мягкие 0.6 вместо 1.0,accessories,medium,complaint
+Курьер опоздал, пришлось переносить встречу,delivery,medium,complaint
+Не могу оплатить частями - ошибка 'недоступно',payment,high,technical_problem
+Гарантия на PRS SE: покрывает ли замену датчиков?,warranty,low,product_info
+Электрогитара Jackson: сломался Floyd Rose,electric,high,technical_problem
+Акустика Fender CD-60: отклеилась подставка,acoustic,high,complaint
+Бас Cort: батарейка садится за один день,bass,high,technical_problem
+Классика Martinez: не строит после доставки,classical,medium,technical_problem
+Струны D'Addario: быстро ржавеют, это норма?,accessories,medium,product_info
+Трек-номер заказа не отслеживается,delivery,high,order_issue
+Оплата картой зависла в 'обработке' 3 дня,payment,high,technical_problem
+Гарантийный ремонт баса: сломался бридж,warranty,high,technical_problem
